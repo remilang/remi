@@ -1,0 +1,40 @@
+﻿[type]
+null, boolean, integer(int64), real(double), string
+
+[syntax]
+one line max 1KB (1024 bytes)
+<CRLF> to split line (absolute)
+; : comment (absolute)
+<Space> to split token
+[] : meta expression
+operator: +;-;*;/;%;(;);&;|;!;^;&&;||;>;<;>=;<=;==;!=;
+function != task
+function = out 1, in n(0-max)
+task = out m(0-max), in n(0-max)
+symbol/label/value is element
+
+[keyword]
+move [from:value] to [to:symbol]
+drop [symbol]
+mark [label]
+jump [label] on [condition:value]
+back
+load [value]
+call [value] in [in:value optional more] out [out:symbol optional more]
+emit [command:value]
+
+[feature]
+no scope
+
+[task]
+copy_file
+copy_directory
+new_file
+new_directory
+new_process
+move_file
+move_directory
+kill_file
+kill_process
+kill_directory
+set_environment

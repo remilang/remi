@@ -1,0 +1,19 @@
+﻿move 1 to a ;a is symbol
+move 1 to a+1 ;error: a+1 is illegal symbol name
+move 1 to [a+1] ;a+1 is value, [a+1] is symbol
+
+move a+1 to a ;a+1 is value, a=a+1
+move [a+1] to a ;a+1 is value, [a+1] is symbol, a=meta(a+1).value
+
+drop a
+
+mark a ;a is label
+mark a+1 ;error: a+1 is illegal label name
+mark [a+1] ;a+1 is value, [a+1] is label
+
+back
+jump a
+when b then c1 c2
+load d ;d is path
+call e in a b out c d ;e is task name like "send"
+emit f ;f is "move a to b"

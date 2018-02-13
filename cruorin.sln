@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cruorin", "core\Cruorin.csproj", "{DE1E7615-8385-4723-AB23-FBA04124879A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 docs", "1 docs", "{52676DDF-C4BA-424E-B3DF-427CF45CDC21}"
+	ProjectSection(SolutionItems) = preProject
+		docs\script.design.txt = docs\script.design.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 core", "2 core", "{DFC127F4-B487-4060-95D2-D47F664E7542}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 toolkit", "4 toolkit", "{F1DAD049-4283-413E-8911-CD8810E60400}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 test", "5 test", "{86E76A32-246D-4F1D-89E7-D3389C7BE1DB}"
+	ProjectSection(SolutionItems) = preProject
+		test\test.co = test\test.co
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 plugin", "3 plugin", "{3EFFE3D5-181A-437C-9543-0831A038E444}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSL.IO", "plugin\CSL.IO\CSL.IO.csproj", "{46CFC865-4AAD-4AA2-90E4-D50E039E3C7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runner.GUI", "toolkit\runner.gui\Runner.GUI.csproj", "{43F93B60-A943-4EDE-B5B3-643FAD4CE13D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runner.Shell", "toolkit\runner.shell\Runner.Shell.csproj", "{1B24973C-0EDA-491A-9A18-39A0647CE47E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE1E7615-8385-4723-AB23-FBA04124879A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE1E7615-8385-4723-AB23-FBA04124879A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE1E7615-8385-4723-AB23-FBA04124879A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE1E7615-8385-4723-AB23-FBA04124879A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46CFC865-4AAD-4AA2-90E4-D50E039E3C7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46CFC865-4AAD-4AA2-90E4-D50E039E3C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46CFC865-4AAD-4AA2-90E4-D50E039E3C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46CFC865-4AAD-4AA2-90E4-D50E039E3C7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43F93B60-A943-4EDE-B5B3-643FAD4CE13D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43F93B60-A943-4EDE-B5B3-643FAD4CE13D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43F93B60-A943-4EDE-B5B3-643FAD4CE13D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43F93B60-A943-4EDE-B5B3-643FAD4CE13D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B24973C-0EDA-491A-9A18-39A0647CE47E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B24973C-0EDA-491A-9A18-39A0647CE47E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B24973C-0EDA-491A-9A18-39A0647CE47E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B24973C-0EDA-491A-9A18-39A0647CE47E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DE1E7615-8385-4723-AB23-FBA04124879A} = {DFC127F4-B487-4060-95D2-D47F664E7542}
+		{46CFC865-4AAD-4AA2-90E4-D50E039E3C7F} = {3EFFE3D5-181A-437C-9543-0831A038E444}
+		{43F93B60-A943-4EDE-B5B3-643FAD4CE13D} = {F1DAD049-4283-413E-8911-CD8810E60400}
+		{1B24973C-0EDA-491A-9A18-39A0647CE47E} = {F1DAD049-4283-413E-8911-CD8810E60400}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE1E7615-8385-4723-AB23-FBA04124879A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cruorin</RootNamespace>
+    <AssemblyName>Cruorin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\output\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\output\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Command\DropCommand.cs" />
+    <Compile Include="Command\_Command.cs" />
+    <Compile Include="Command\BackCommand.cs" />
+    <Compile Include="Command\JumpCommand.cs" />
+    <Compile Include="Command\MarkCommand.cs" />
+    <Compile Include="Command\MoveCommand.cs" />
+    <Compile Include="Runtime\Expression\Operand.cs" />
+    <Compile Include="Runtime\Expression\Operator.cs" />
+    <Compile Include="Runtime\Compile\Handler\LexicalAnalyzer.cs" />
+    <Compile Include="Runtime\Compile\Handler\SemanticPhase.cs" />
+    <Compile Include="Runtime\Compile\CompileContext.cs" />
+    <Compile Include="Runtime\Compile\Compiler.cs" />
+    <Compile Include="Runtime\Compile\Handler\LexicalPhase.cs" />
+    <Compile Include="Element\External\Function.cs" />
+    <Compile Include="Element\External\Library.cs" />
+    <Compile Include="Element\External\Task.cs" />
+    <Compile Include="Element\Label.cs" />
+    <Compile Include="Element\Symbol.cs" />
+    <Compile Include="Element\Value.cs" />
+    <Compile Include="Runtime\Compile\Handler\SyntaxPhase.cs" />
+    <Compile Include="Runtime\Compile\ICompilePhase.cs" />
+    <Compile Include="Runtime\Execute\ExecuteContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Runtime\Expression\Expression.cs" />
+    <Compile Include="Runtime\Execute\Executor.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
